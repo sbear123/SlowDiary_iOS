@@ -1,0 +1,50 @@
+PODS:
+  - Alamofire (5.4.3)
+  - Floaty (4.1.0)
+  - FSCalendar (2.8.2)
+  - ObjectMapper (4.2.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.2)
+  - SwiftyJSON (4.3.0)
+  - Then (2.7.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - Floaty (~> 4.1.0)
+  - FSCalendar
+  - ObjectMapper
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SwiftyJSON (~> 4.0)
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Floaty
+    - FSCalendar
+    - ObjectMapper
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftyJSON
+    - Then
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Floaty: 1a4e213f3512cf3045ef9cb0c1ff456226d1f66a
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
+
+PODFILE CHECKSUM: 67d65fae1dc08419b42720a129b12c62fab37b0d
+
+COCOAPODS: 1.9.3

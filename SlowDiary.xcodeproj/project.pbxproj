@@ -1,0 +1,1062 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		431FF9F5265207C600FDFE1F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431FF9F4265207C600FDFE1F /* Home.storyboard */; };
+		431FF9FA265207DF00FDFE1F /* Today.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431FF9F9265207DF00FDFE1F /* Today.storyboard */; };
+		431FF9FF2652080600FDFE1F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431FF9FE2652080600FDFE1F /* Profile.storyboard */; };
+		431FFA042652083A00FDFE1F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431FFA032652083A00FDFE1F /* HomeViewController.swift */; };
+		431FFA092652084700FDFE1F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431FFA082652084700FDFE1F /* TodayViewController.swift */; };
+		431FFA0E2652085200FDFE1F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431FFA0D2652085200FDFE1F /* ProfileViewController.swift */; };
+		431FFA1A2652302600FDFE1F /* SetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431FFA192652302600FDFE1F /* SetTableViewCell.swift */; };
+		437EF1722658E004002E0431 /* THEletssmileM.otf in Resources */ = {isa = PBXBuildFile; fileRef = 437EF16F2658E004002E0431 /* THEletssmileM.otf */; };
+		437EF1732658E004002E0431 /* THEletssmileM.otf in Resources */ = {isa = PBXBuildFile; fileRef = 437EF16F2658E004002E0431 /* THEletssmileM.otf */; };
+		437EF1742658E004002E0431 /* THEletssmileM.otf in Resources */ = {isa = PBXBuildFile; fileRef = 437EF16F2658E004002E0431 /* THEletssmileM.otf */; };
+		437EF1752658E004002E0431 /* THEletssmileR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 437EF1702658E004002E0431 /* THEletssmileR.otf */; };
+		437EF1762658E004002E0431 /* THEletssmileR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 437EF1702658E004002E0431 /* THEletssmileR.otf */; };
+		437EF1772658E004002E0431 /* THEletssmileR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 437EF1702658E004002E0431 /* THEletssmileR.otf */; };
+		437EF1782658E004002E0431 /* THEletssmileL.otf in Resources */ = {isa = PBXBuildFile; fileRef = 437EF1712658E004002E0431 /* THEletssmileL.otf */; };
+		437EF1792658E004002E0431 /* THEletssmileL.otf in Resources */ = {isa = PBXBuildFile; fileRef = 437EF1712658E004002E0431 /* THEletssmileL.otf */; };
+		437EF17A2658E004002E0431 /* THEletssmileL.otf in Resources */ = {isa = PBXBuildFile; fileRef = 437EF1712658E004002E0431 /* THEletssmileL.otf */; };
+		437EF1822658E1BA002E0431 /* NanumPen.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 437EF1812658E1BA002E0431 /* NanumPen.ttf */; };
+		437EF1832658E1BA002E0431 /* NanumPen.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 437EF1812658E1BA002E0431 /* NanumPen.ttf */; };
+		437EF1842658E1BA002E0431 /* NanumPen.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 437EF1812658E1BA002E0431 /* NanumPen.ttf */; };
+		437EF18C2658EDFE002E0431 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437EF18B2658EDFE002E0431 /* Login.storyboard */; };
+		437EF18D2658EDFE002E0431 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437EF18B2658EDFE002E0431 /* Login.storyboard */; };
+		437EF18E2658EDFE002E0431 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437EF18B2658EDFE002E0431 /* Login.storyboard */; };
+		438D47B22654F56000FC3E5B /* WeatherViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D47B12654F56000FC3E5B /* WeatherViewCell.swift */; };
+		438D47B72654FB3400FC3E5B /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D47B62654FB3400FC3E5B /* WeatherViewModel.swift */; };
+		438D47BC2654FB7100FC3E5B /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D47BB2654FB7100FC3E5B /* WeatherModel.swift */; };
+		438D47C12654FE6900FC3E5B /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D47C02654FE6900FC3E5B /* WeatherData.swift */; };
+		43BFE9BB265E083600565E03 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFE9BA265E083600565E03 /* LoginViewController.swift */; };
+		43BFE9BD265E086000565E03 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFE9BC265E086000565E03 /* SignUpViewController.swift */; };
+		43BFE9C0265E0D4700565E03 /* Tab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BFE9BF265E0D4700565E03 /* Tab.storyboard */; };
+		43BFE9C3265E304200565E03 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFE9C2265E304200565E03 /* LoginViewModel.swift */; };
+		43BFE9C5265E371000565E03 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFE9C4265E371000565E03 /* SignUpViewModel.swift */; };
+		43BFE9C8265E466800565E03 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFE9C7265E466800565E03 /* ProfileViewModel.swift */; };
+		43BFE9CC265F7D2B00565E03 /* chProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFE9CB265F7D2B00565E03 /* chProfileViewController.swift */; };
+		43BFE9CE265F9CFC00565E03 /* UIView+Bordered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFE9CD265F9CFC00565E03 /* UIView+Bordered.swift */; };
+		43DF96B126391CD300D2EC70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF96B026391CD300D2EC70 /* AppDelegate.swift */; };
+		43DF96B326391CD300D2EC70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF96B226391CD300D2EC70 /* SceneDelegate.swift */; };
+		43DF96B526391CD300D2EC70 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF96B426391CD300D2EC70 /* TabController.swift */; };
+		43DF96BA26391CD300D2EC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DF96B926391CD300D2EC70 /* Assets.xcassets */; };
+		43DF96BD26391CD300D2EC70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DF96BB26391CD300D2EC70 /* LaunchScreen.storyboard */; };
+		43DF96C826391CD400D2EC70 /* SlowDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF96C726391CD400D2EC70 /* SlowDiaryTests.swift */; };
+		43DF96D326391CD400D2EC70 /* SlowDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF96D226391CD400D2EC70 /* SlowDiaryUITests.swift */; };
+		43F15D3C2660C27200E725DF /* Write.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F15D3B2660C27200E725DF /* Write.storyboard */; };
+		68FFC0D9EED11848896FB487 /* Pods_SlowDiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6287EAE88590369C4F8480 /* Pods_SlowDiaryTests.framework */; };
+		AEE44FEA31C81B97508B7B31 /* Pods_SlowDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44162175A2ED9965E325733F /* Pods_SlowDiary.framework */; };
+		DADF84921C65AF0124BC5704 /* Pods_SlowDiary_SlowDiaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC48EAAAEA78D264A92F1B79 /* Pods_SlowDiary_SlowDiaryUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43DF96C426391CD400D2EC70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43DF96A526391CD300D2EC70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43DF96AC26391CD300D2EC70;
+			remoteInfo = SlowDiary;
+		};
+		43DF96CF26391CD400D2EC70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43DF96A526391CD300D2EC70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43DF96AC26391CD300D2EC70;
+			remoteInfo = SlowDiary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0792B9525310BB2A3EB47290 /* Pods-SlowDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlowDiary.debug.xcconfig"; path = "Target Support Files/Pods-SlowDiary/Pods-SlowDiary.debug.xcconfig"; sourceTree = "<group>"; };
+		3BF7F35DD53FCF929E46AF44 /* Pods-SlowDiary-SlowDiaryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlowDiary-SlowDiaryUITests.debug.xcconfig"; path = "Target Support Files/Pods-SlowDiary-SlowDiaryUITests/Pods-SlowDiary-SlowDiaryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		431FF9F4265207C600FDFE1F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		431FF9F9265207DF00FDFE1F /* Today.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Today.storyboard; sourceTree = "<group>"; };
+		431FF9FE2652080600FDFE1F /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		431FFA032652083A00FDFE1F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		431FFA082652084700FDFE1F /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		431FFA0D2652085200FDFE1F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		431FFA192652302600FDFE1F /* SetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewCell.swift; sourceTree = "<group>"; };
+		437EF16F2658E004002E0431 /* THEletssmileM.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = THEletssmileM.otf; sourceTree = "<group>"; };
+		437EF1702658E004002E0431 /* THEletssmileR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = THEletssmileR.otf; sourceTree = "<group>"; };
+		437EF1712658E004002E0431 /* THEletssmileL.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = THEletssmileL.otf; sourceTree = "<group>"; };
+		437EF1812658E1BA002E0431 /* NanumPen.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumPen.ttf; sourceTree = "<group>"; };
+		437EF18B2658EDFE002E0431 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		438D47B12654F56000FC3E5B /* WeatherViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewCell.swift; sourceTree = "<group>"; };
+		438D47B62654FB3400FC3E5B /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		438D47BB2654FB7100FC3E5B /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		438D47C02654FE6900FC3E5B /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		43BFE9BA265E083600565E03 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		43BFE9BC265E086000565E03 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		43BFE9BF265E0D4700565E03 /* Tab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab.storyboard; sourceTree = "<group>"; };
+		43BFE9C2265E304200565E03 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		43BFE9C4265E371000565E03 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		43BFE9C7265E466800565E03 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		43BFE9CB265F7D2B00565E03 /* chProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chProfileViewController.swift; sourceTree = "<group>"; };
+		43BFE9CD265F9CFC00565E03 /* UIView+Bordered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Bordered.swift"; sourceTree = "<group>"; };
+		43DF96AD26391CD300D2EC70 /* SlowDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43DF96B026391CD300D2EC70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43DF96B226391CD300D2EC70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		43DF96B426391CD300D2EC70 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		43DF96B926391CD300D2EC70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43DF96BC26391CD300D2EC70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43DF96BE26391CD300D2EC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43DF96C326391CD400D2EC70 /* SlowDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43DF96C726391CD400D2EC70 /* SlowDiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowDiaryTests.swift; sourceTree = "<group>"; };
+		43DF96C926391CD400D2EC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43DF96CE26391CD400D2EC70 /* SlowDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43DF96D226391CD400D2EC70 /* SlowDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowDiaryUITests.swift; sourceTree = "<group>"; };
+		43DF96D426391CD400D2EC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43F15D3B2660C27200E725DF /* Write.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Write.storyboard; sourceTree = "<group>"; };
+		44162175A2ED9965E325733F /* Pods_SlowDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlowDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C6287EAE88590369C4F8480 /* Pods_SlowDiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlowDiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B04685EC168D7494A55E759 /* Pods-SlowDiaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlowDiaryTests.debug.xcconfig"; path = "Target Support Files/Pods-SlowDiaryTests/Pods-SlowDiaryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA31AF22467AB1FDCD72F4CB /* Pods-SlowDiaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlowDiaryTests.release.xcconfig"; path = "Target Support Files/Pods-SlowDiaryTests/Pods-SlowDiaryTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB0B8B927452E8ACEE800FCC /* Pods-SlowDiary-SlowDiaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlowDiary-SlowDiaryUITests.release.xcconfig"; path = "Target Support Files/Pods-SlowDiary-SlowDiaryUITests/Pods-SlowDiary-SlowDiaryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DC48EAAAEA78D264A92F1B79 /* Pods_SlowDiary_SlowDiaryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlowDiary_SlowDiaryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6201B918B6DD2EF257CAE71 /* Pods-SlowDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlowDiary.release.xcconfig"; path = "Target Support Files/Pods-SlowDiary/Pods-SlowDiary.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43DF96AA26391CD300D2EC70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEE44FEA31C81B97508B7B31 /* Pods_SlowDiary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43DF96C026391CD400D2EC70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68FFC0D9EED11848896FB487 /* Pods_SlowDiaryTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43DF96CB26391CD400D2EC70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADF84921C65AF0124BC5704 /* Pods_SlowDiary_SlowDiaryUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		431FFA1526522ED100FDFE1F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				431FFA192652302600FDFE1F /* SetTableViewCell.swift */,
+				438D47B12654F56000FC3E5B /* WeatherViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		433A44102660940700AAC60B /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				438D47BB2654FB7100FC3E5B /* WeatherModel.swift */,
+				438D47C02654FE6900FC3E5B /* WeatherData.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		433A44112660941E00AAC60B /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		433A44122660942C00AAC60B /* Write */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
+		433A44132660943C00AAC60B /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		433A44142660950700AAC60B /* Goal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Goal;
+			sourceTree = "<group>";
+		};
+		433A44152660951500AAC60B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		437EF16E2658DE1B002E0431 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				437EF1812658E1BA002E0431 /* NanumPen.ttf */,
+				437EF1712658E004002E0431 /* THEletssmileL.otf */,
+				437EF16F2658E004002E0431 /* THEletssmileM.otf */,
+				437EF1702658E004002E0431 /* THEletssmileR.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		437EF1922658F3DD002E0431 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				431FFA032652083A00FDFE1F /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		437EF1932658F3ED002E0431 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				431FFA082652084700FDFE1F /* TodayViewController.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		437EF1942658F3F7002E0431 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				431FFA0D2652085200FDFE1F /* ProfileViewController.swift */,
+				43BFE9CB265F7D2B00565E03 /* chProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		43BFE9B9265E081200565E03 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				43BFE9BA265E083600565E03 /* LoginViewController.swift */,
+				43BFE9BC265E086000565E03 /* SignUpViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		43BFE9BE265E0D2A00565E03 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				431FF9F9265207DF00FDFE1F /* Today.storyboard */,
+				431FF9F4265207C600FDFE1F /* Home.storyboard */,
+				431FF9FE2652080600FDFE1F /* Profile.storyboard */,
+				43BFE9BF265E0D4700565E03 /* Tab.storyboard */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+		43BFE9C1265E302F00565E03 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				43BFE9C2265E304200565E03 /* LoginViewModel.swift */,
+				43BFE9C4265E371000565E03 /* SignUpViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		43BFE9C6265E465200565E03 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				43BFE9C7265E466800565E03 /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		43DF96A426391CD300D2EC70 = {
+			isa = PBXGroup;
+			children = (
+				43DF96AF26391CD300D2EC70 /* SlowDiary */,
+				43DF96C626391CD400D2EC70 /* SlowDiaryTests */,
+				43DF96D126391CD400D2EC70 /* SlowDiaryUITests */,
+				43DF96AE26391CD300D2EC70 /* Products */,
+				945A2383430154BECD0A8AF4 /* Pods */,
+				67D495F99225F54EB6B77643 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		43DF96AE26391CD300D2EC70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43DF96AD26391CD300D2EC70 /* SlowDiary.app */,
+				43DF96C326391CD400D2EC70 /* SlowDiaryTests.xctest */,
+				43DF96CE26391CD400D2EC70 /* SlowDiaryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43DF96AF26391CD300D2EC70 /* SlowDiary */ = {
+			isa = PBXGroup;
+			children = (
+				43DF96F226392A9F00D2EC70 /* Services */,
+				43DF96F12639244C00D2EC70 /* Models */,
+				43DF96F02639243F00D2EC70 /* ViewModels */,
+				43DF96E626391D1E00D2EC70 /* AppDelegates */,
+				43DF96EC26391D6200D2EC70 /* Controllers */,
+				43DF96EB26391D4A00D2EC70 /* Resources */,
+				43DF96E726391D2900D2EC70 /* VIews */,
+				43DF96BE26391CD300D2EC70 /* Info.plist */,
+			);
+			path = SlowDiary;
+			sourceTree = "<group>";
+		};
+		43DF96C626391CD400D2EC70 /* SlowDiaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				43DF96C726391CD400D2EC70 /* SlowDiaryTests.swift */,
+				43DF96C926391CD400D2EC70 /* Info.plist */,
+			);
+			path = SlowDiaryTests;
+			sourceTree = "<group>";
+		};
+		43DF96D126391CD400D2EC70 /* SlowDiaryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43DF96D226391CD400D2EC70 /* SlowDiaryUITests.swift */,
+				43DF96D426391CD400D2EC70 /* Info.plist */,
+			);
+			path = SlowDiaryUITests;
+			sourceTree = "<group>";
+		};
+		43DF96E626391D1E00D2EC70 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				43DF96B026391CD300D2EC70 /* AppDelegate.swift */,
+				43DF96B226391CD300D2EC70 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		43DF96E726391D2900D2EC70 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				43F15D392660C25500E725DF /* Write */,
+				43BFE9BE265E0D2A00565E03 /* TabViews */,
+				43DF96BB26391CD300D2EC70 /* LaunchScreen.storyboard */,
+				437EF18B2658EDFE002E0431 /* Login.storyboard */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		43DF96EB26391D4A00D2EC70 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				437EF16E2658DE1B002E0431 /* Fonts */,
+				43DF96B926391CD300D2EC70 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		43DF96EC26391D6200D2EC70 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				43BFE9B9265E081200565E03 /* Login */,
+				437EF1942658F3F7002E0431 /* Profile */,
+				437EF1932658F3ED002E0431 /* Today */,
+				437EF1922658F3DD002E0431 /* Home */,
+				431FFA1526522ED100FDFE1F /* Cell */,
+				43DF96B426391CD300D2EC70 /* TabController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		43DF96F02639243F00D2EC70 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				43BFE9C6265E465200565E03 /* Profile */,
+				43BFE9C1265E302F00565E03 /* Login */,
+				438D47B62654FB3400FC3E5B /* WeatherViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		43DF96F12639244C00D2EC70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				433A44152660951500AAC60B /* Home */,
+				433A44142660950700AAC60B /* Goal */,
+				433A44132660943C00AAC60B /* Picture */,
+				433A44122660942C00AAC60B /* Write */,
+				433A44112660941E00AAC60B /* User */,
+				433A44102660940700AAC60B /* Weather */,
+				43BFE9CD265F9CFC00565E03 /* UIView+Bordered.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		43DF96F226392A9F00D2EC70 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		43F15D392660C25500E725DF /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				43F15D3B2660C27200E725DF /* Write.storyboard */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
+		67D495F99225F54EB6B77643 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44162175A2ED9965E325733F /* Pods_SlowDiary.framework */,
+				DC48EAAAEA78D264A92F1B79 /* Pods_SlowDiary_SlowDiaryUITests.framework */,
+				4C6287EAE88590369C4F8480 /* Pods_SlowDiaryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		945A2383430154BECD0A8AF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0792B9525310BB2A3EB47290 /* Pods-SlowDiary.debug.xcconfig */,
+				E6201B918B6DD2EF257CAE71 /* Pods-SlowDiary.release.xcconfig */,
+				3BF7F35DD53FCF929E46AF44 /* Pods-SlowDiary-SlowDiaryUITests.debug.xcconfig */,
+				AB0B8B927452E8ACEE800FCC /* Pods-SlowDiary-SlowDiaryUITests.release.xcconfig */,
+				5B04685EC168D7494A55E759 /* Pods-SlowDiaryTests.debug.xcconfig */,
+				AA31AF22467AB1FDCD72F4CB /* Pods-SlowDiaryTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43DF96AC26391CD300D2EC70 /* SlowDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43DF96D726391CD400D2EC70 /* Build configuration list for PBXNativeTarget "SlowDiary" */;
+			buildPhases = (
+				0F476B9629E8705E4F27C429 /* [CP] Check Pods Manifest.lock */,
+				43DF96A926391CD300D2EC70 /* Sources */,
+				43DF96AA26391CD300D2EC70 /* Frameworks */,
+				43DF96AB26391CD300D2EC70 /* Resources */,
+				56BBC23EFF9A2C92110A03DE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlowDiary;
+			productName = SlowDiary;
+			productReference = 43DF96AD26391CD300D2EC70 /* SlowDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43DF96C226391CD400D2EC70 /* SlowDiaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43DF96DA26391CD400D2EC70 /* Build configuration list for PBXNativeTarget "SlowDiaryTests" */;
+			buildPhases = (
+				0BC5889E4EAFC08CBF797A0A /* [CP] Check Pods Manifest.lock */,
+				43DF96BF26391CD400D2EC70 /* Sources */,
+				43DF96C026391CD400D2EC70 /* Frameworks */,
+				43DF96C126391CD400D2EC70 /* Resources */,
+				0F818392C216E51C816C9B2C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43DF96C526391CD400D2EC70 /* PBXTargetDependency */,
+			);
+			name = SlowDiaryTests;
+			productName = SlowDiaryTests;
+			productReference = 43DF96C326391CD400D2EC70 /* SlowDiaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43DF96CD26391CD400D2EC70 /* SlowDiaryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43DF96DD26391CD400D2EC70 /* Build configuration list for PBXNativeTarget "SlowDiaryUITests" */;
+			buildPhases = (
+				516C4842C102333DBD15BB8D /* [CP] Check Pods Manifest.lock */,
+				43DF96CA26391CD400D2EC70 /* Sources */,
+				43DF96CB26391CD400D2EC70 /* Frameworks */,
+				43DF96CC26391CD400D2EC70 /* Resources */,
+				D37D9A256B7EEA6A9E4269F6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43DF96D026391CD400D2EC70 /* PBXTargetDependency */,
+			);
+			name = SlowDiaryUITests;
+			productName = SlowDiaryUITests;
+			productReference = 43DF96CE26391CD400D2EC70 /* SlowDiaryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43DF96A526391CD300D2EC70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					43DF96AC26391CD300D2EC70 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					43DF96C226391CD400D2EC70 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 43DF96AC26391CD300D2EC70;
+					};
+					43DF96CD26391CD400D2EC70 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 43DF96AC26391CD300D2EC70;
+					};
+				};
+			};
+			buildConfigurationList = 43DF96A826391CD300D2EC70 /* Build configuration list for PBXProject "SlowDiary" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43DF96A426391CD300D2EC70;
+			productRefGroup = 43DF96AE26391CD300D2EC70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43DF96AC26391CD300D2EC70 /* SlowDiary */,
+				43DF96C226391CD400D2EC70 /* SlowDiaryTests */,
+				43DF96CD26391CD400D2EC70 /* SlowDiaryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43DF96AB26391CD300D2EC70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				431FF9FF2652080600FDFE1F /* Profile.storyboard in Resources */,
+				43DF96BD26391CD300D2EC70 /* LaunchScreen.storyboard in Resources */,
+				43F15D3C2660C27200E725DF /* Write.storyboard in Resources */,
+				431FF9FA265207DF00FDFE1F /* Today.storyboard in Resources */,
+				43DF96BA26391CD300D2EC70 /* Assets.xcassets in Resources */,
+				43BFE9C0265E0D4700565E03 /* Tab.storyboard in Resources */,
+				437EF1822658E1BA002E0431 /* NanumPen.ttf in Resources */,
+				437EF1722658E004002E0431 /* THEletssmileM.otf in Resources */,
+				437EF1782658E004002E0431 /* THEletssmileL.otf in Resources */,
+				437EF1752658E004002E0431 /* THEletssmileR.otf in Resources */,
+				431FF9F5265207C600FDFE1F /* Home.storyboard in Resources */,
+				437EF18C2658EDFE002E0431 /* Login.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43DF96C126391CD400D2EC70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437EF1732658E004002E0431 /* THEletssmileM.otf in Resources */,
+				437EF1762658E004002E0431 /* THEletssmileR.otf in Resources */,
+				437EF1832658E1BA002E0431 /* NanumPen.ttf in Resources */,
+				437EF18D2658EDFE002E0431 /* Login.storyboard in Resources */,
+				437EF1792658E004002E0431 /* THEletssmileL.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43DF96CC26391CD400D2EC70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437EF1742658E004002E0431 /* THEletssmileM.otf in Resources */,
+				437EF1772658E004002E0431 /* THEletssmileR.otf in Resources */,
+				437EF1842658E1BA002E0431 /* NanumPen.ttf in Resources */,
+				437EF18E2658EDFE002E0431 /* Login.storyboard in Resources */,
+				437EF17A2658E004002E0431 /* THEletssmileL.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BC5889E4EAFC08CBF797A0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlowDiaryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F476B9629E8705E4F27C429 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlowDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F818392C216E51C816C9B2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlowDiaryTests/Pods-SlowDiaryTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlowDiaryTests/Pods-SlowDiaryTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlowDiaryTests/Pods-SlowDiaryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		516C4842C102333DBD15BB8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlowDiary-SlowDiaryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56BBC23EFF9A2C92110A03DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlowDiary/Pods-SlowDiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlowDiary/Pods-SlowDiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlowDiary/Pods-SlowDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D37D9A256B7EEA6A9E4269F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlowDiary-SlowDiaryUITests/Pods-SlowDiary-SlowDiaryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlowDiary-SlowDiaryUITests/Pods-SlowDiary-SlowDiaryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlowDiary-SlowDiaryUITests/Pods-SlowDiary-SlowDiaryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43DF96A926391CD300D2EC70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43BFE9BB265E083600565E03 /* LoginViewController.swift in Sources */,
+				431FFA1A2652302600FDFE1F /* SetTableViewCell.swift in Sources */,
+				438D47B72654FB3400FC3E5B /* WeatherViewModel.swift in Sources */,
+				43BFE9CE265F9CFC00565E03 /* UIView+Bordered.swift in Sources */,
+				431FFA0E2652085200FDFE1F /* ProfileViewController.swift in Sources */,
+				43DF96B526391CD300D2EC70 /* TabController.swift in Sources */,
+				438D47B22654F56000FC3E5B /* WeatherViewCell.swift in Sources */,
+				43BFE9C3265E304200565E03 /* LoginViewModel.swift in Sources */,
+				43BFE9C5265E371000565E03 /* SignUpViewModel.swift in Sources */,
+				43DF96B126391CD300D2EC70 /* AppDelegate.swift in Sources */,
+				43BFE9CC265F7D2B00565E03 /* chProfileViewController.swift in Sources */,
+				431FFA092652084700FDFE1F /* TodayViewController.swift in Sources */,
+				43DF96B326391CD300D2EC70 /* SceneDelegate.swift in Sources */,
+				438D47BC2654FB7100FC3E5B /* WeatherModel.swift in Sources */,
+				431FFA042652083A00FDFE1F /* HomeViewController.swift in Sources */,
+				43BFE9BD265E086000565E03 /* SignUpViewController.swift in Sources */,
+				43BFE9C8265E466800565E03 /* ProfileViewModel.swift in Sources */,
+				438D47C12654FE6900FC3E5B /* WeatherData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43DF96BF26391CD400D2EC70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43DF96C826391CD400D2EC70 /* SlowDiaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43DF96CA26391CD400D2EC70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43DF96D326391CD400D2EC70 /* SlowDiaryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43DF96C526391CD400D2EC70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43DF96AC26391CD300D2EC70 /* SlowDiary */;
+			targetProxy = 43DF96C426391CD400D2EC70 /* PBXContainerItemProxy */;
+		};
+		43DF96D026391CD400D2EC70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43DF96AC26391CD300D2EC70 /* SlowDiary */;
+			targetProxy = 43DF96CF26391CD400D2EC70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43DF96BB26391CD300D2EC70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43DF96BC26391CD300D2EC70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43DF96D526391CD400D2EC70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43DF96D626391CD400D2EC70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43DF96D826391CD400D2EC70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0792B9525310BB2A3EB47290 /* Pods-SlowDiary.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A58343K98Z;
+				INFOPLIST_FILE = SlowDiary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyun.SlowDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43DF96D926391CD400D2EC70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6201B918B6DD2EF257CAE71 /* Pods-SlowDiary.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A58343K98Z;
+				INFOPLIST_FILE = SlowDiary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyun.SlowDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		43DF96DB26391CD400D2EC70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B04685EC168D7494A55E759 /* Pods-SlowDiaryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A58343K98Z;
+				INFOPLIST_FILE = SlowDiaryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyun.SlowDiaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlowDiary.app/SlowDiary";
+			};
+			name = Debug;
+		};
+		43DF96DC26391CD400D2EC70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA31AF22467AB1FDCD72F4CB /* Pods-SlowDiaryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A58343K98Z;
+				INFOPLIST_FILE = SlowDiaryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyun.SlowDiaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlowDiary.app/SlowDiary";
+			};
+			name = Release;
+		};
+		43DF96DE26391CD400D2EC70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF7F35DD53FCF929E46AF44 /* Pods-SlowDiary-SlowDiaryUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A58343K98Z;
+				INFOPLIST_FILE = SlowDiaryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyun.SlowDiaryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlowDiary;
+			};
+			name = Debug;
+		};
+		43DF96DF26391CD400D2EC70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB0B8B927452E8ACEE800FCC /* Pods-SlowDiary-SlowDiaryUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A58343K98Z;
+				INFOPLIST_FILE = SlowDiaryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyun.SlowDiaryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlowDiary;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43DF96A826391CD300D2EC70 /* Build configuration list for PBXProject "SlowDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43DF96D526391CD400D2EC70 /* Debug */,
+				43DF96D626391CD400D2EC70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43DF96D726391CD400D2EC70 /* Build configuration list for PBXNativeTarget "SlowDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43DF96D826391CD400D2EC70 /* Debug */,
+				43DF96D926391CD400D2EC70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43DF96DA26391CD400D2EC70 /* Build configuration list for PBXNativeTarget "SlowDiaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43DF96DB26391CD400D2EC70 /* Debug */,
+				43DF96DC26391CD400D2EC70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43DF96DD26391CD400D2EC70 /* Build configuration list for PBXNativeTarget "SlowDiaryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43DF96DE26391CD400D2EC70 /* Debug */,
+				43DF96DF26391CD400D2EC70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43DF96A526391CD300D2EC70 /* Project object */;
+}
