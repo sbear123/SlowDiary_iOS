@@ -1,18 +1,19 @@
 //
-//  TodayViewController.swift
+//  WriteViewController.swift
 //  SlowDiary
 //
-//  Created by 박지현 on 2021/05/17.
+//  Created by 박지현 on 2021/06/01.
 //
 
 import UIKit
 
-class TodayViewController: UIViewController {
-
-    @IBOutlet var dateL: UILabel!
-    @IBOutlet var feelImage: UIImageView!
-    @IBOutlet var weatherImage: UIImageView!
-    @IBOutlet var titleL: UILabel!
+class WriteViewController: UIViewController {
+    
+    @IBOutlet weak var dateL: UILabel!
+    @IBOutlet weak var feelB: UIButton!
+    @IBOutlet weak var feelImg: UIImageView!
+    @IBOutlet weak var weatherImg: UIImageView!
+    @IBOutlet weak var titleF: UITextField!
     @IBOutlet var content1: UILabel!
     @IBOutlet var content2: UILabel!
     @IBOutlet var content3: UILabel!
@@ -25,25 +26,26 @@ class TodayViewController: UIViewController {
     @IBOutlet var content10: UILabel!
     @IBOutlet var content11: UILabel!
     @IBOutlet var content12: UILabel!
-    @IBOutlet var satisP: UIProgressView!
-    @IBOutlet var satisL: UILabel!
-    @IBOutlet var goalL: UILabel!
-    @IBOutlet var complimentL: UILabel!
-    @IBOutlet var regretL: UILabel!
-    @IBOutlet var PicCollectionView: UICollectionView!
-    @IBOutlet var pager: UIPageControl!
+    @IBOutlet weak var updateWriteB: UIButton!
+    @IBOutlet weak var satisS: UISlider!
+    @IBOutlet weak var satisL: UILabel!
+    @IBOutlet weak var goalF: UITextField!
+    @IBOutlet weak var complimentF: UITextField!
+    @IBOutlet weak var regretF: UITextField!
+    @IBOutlet weak var PicCollectionView: UICollectionView!
+    @IBOutlet weak var pager: UIPageControl!
     
     @IBAction func pageChanged(_ sender: UIPageControl) {
         let indexPath = IndexPath(item: sender.currentPage, section: 0)
         PicCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
     
-    @IBAction func morePic(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "showPicture", sender: self)
+    @IBAction func finishWrite(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func moreWrite(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "showWrite", sender: self)
+    @IBAction func back(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
     let pVM: PictureViewModel = PictureViewModel.shared
@@ -58,23 +60,12 @@ class TodayViewController: UIViewController {
         pager.numberOfPages = pVM.cntData()
         pager.currentPage = 0
         
-        drawView()
-    }
-    
-    func drawView() {
-        let now = Date()
-        let date = DateFormatter()
-        date.locale = Locale(identifier: "ko_kr")
-        date.timeZone = TimeZone(abbreviation: "KST")
-        date.dateFormat = "MM/dd"
-
-        dateL.text = date.string(from: now)
     }
     
     
 }
 
-extension TodayViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+extension WriteViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     //총 page 개수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -107,7 +98,7 @@ extension TodayViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
 }
 
-extension TodayViewController: UIScrollViewDelegate {
+extension WriteViewController: UIScrollViewDelegate {
     
     //수동으로 넘을 때 page를 인식
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {

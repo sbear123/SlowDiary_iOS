@@ -4,6 +4,8 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -67,36 +69,13 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="tintColor" red="0.3294117647" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zy9-OH-XHL">
-                                                        <rect key="frame" x="119" y="0.0" width="94" height="52"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <real key="value" value="2"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" red="0.17254901959999999" green="0.18039215689999999" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="rightLineColor">
-                                                                <color key="value" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="leftLineColor">
-                                                                <color key="value" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="rightLineWidth">
-                                                                <real key="value" value="2"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="leftLineWidth">
-                                                                <real key="value" value="2"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mm/dd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg0-gY-2b4">
-                                                        <rect key="frame" x="56" y="17" width="44" height="17"/>
+                                                        <rect key="frame" x="56" y="17" width="46" height="18"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="THELetsM" family="THELetsM" pointSize="18"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
+                                                        <size key="shadowOffset" width="0.0" height="0.0"/>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -172,13 +151,97 @@
                                                             <color key="titleColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="0rV-01-AU1" kind="show" id="Ek6-Ni-S0f"/>
+                                                            <action selector="moreWrite:" destination="Kj5-I3-0Aw" eventType="touchUpInside" id="JhW-U2-Ftk"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="GfP-7H-hUZ">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paperImage" translatesAutoresizingMaskIntoConstraints="NO" id="GfP-7H-hUZ">
                                                         <rect key="frame" x="31" y="8" width="262" height="421"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="안   녕   하   세   요        방   갑   습" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acp-qe-QzX">
+                                                        <rect key="frame" x="38" y="266" width="248" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="안   녕   하   세   요        방   갑   습" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgX-I1-Ktr">
+                                                        <rect key="frame" x="38" y="55" width="248" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="안   녕   하   세   요        방   갑   습" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIF-p8-izb">
+                                                        <rect key="frame" x="38" y="127" width="248" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="안   녕   하   세   요        방   갑   습" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVu-N8-Wod">
+                                                        <rect key="frame" x="39" y="371" width="248" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="안   녕   하   세   요        방   갑   습" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygT-eE-La0">
+                                                        <rect key="frame" x="39" y="336" width="248" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="안   녕   하   세   요        방   갑   습" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnc-O6-MxZ">
+                                                        <rect key="frame" x="38" y="20" width="248" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="안   녕   하   세   요        방   갑   습" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WI-aK-zLS">
+                                                        <rect key="frame" x="38" y="197" width="248" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="안   녕   하   세   요        방   갑   습" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AX-ND-045">
+                                                        <rect key="frame" x="38" y="162" width="248" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="안   녕   하   세   요        방   갑   습" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qp7-Ij-P2p">
+                                                        <rect key="frame" x="38" y="90" width="248" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="안   녕   하   세   요        방   갑   습" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApT-kP-A3T">
+                                                        <rect key="frame" x="39" y="406" width="248" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="안   녕   하   세   요        방   갑   습" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYk-Oe-nEb">
+                                                        <rect key="frame" x="38" y="301" width="248" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="안   녕   하   세   요        방   갑   습" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5y-d4-F57">
+                                                        <rect key="frame" x="38" y="231" width="248" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -368,76 +431,125 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0N-k3-x4R">
-                                                <rect key="frame" x="25" y="916" width="325" height="195"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="증명사진" translatesAutoresizingMaskIntoConstraints="NO" id="pXD-lj-cZB">
-                                                        <rect key="frame" x="8" y="17" width="120" height="160"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="15"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="부산 금정구" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDe-uC-mlF">
-                                                        <rect key="frame" x="174" y="87" width="132" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="THELetsM" family="THELetsM" pointSize="18"/>
-                                                        <color key="textColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="beL-6d-x0A">
-                                                        <rect key="frame" x="146" y="87" width="20" height="20"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="tintColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# 흑발" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4q-I2-XdC">
-                                                        <rect key="frame" x="154" y="115" width="152" height="13"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="tintColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="13"/>
-                                                        <color key="textColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# 증명사진" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0u-Yq-pwP">
-                                                        <rect key="frame" x="154" y="130" width="152" height="13"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="tintColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="13"/>
-                                                        <color key="textColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# 얼짱 사진관" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADe-mP-05x">
-                                                        <rect key="frame" x="154" y="145" width="152" height="13"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="tintColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="13"/>
-                                                        <color key="textColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2s-4N-mop">
-                                                        <rect key="frame" x="259" y="15" width="58" height="25"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <state key="normal" title="더보기">
-                                                            <color key="titleColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" canCancelContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Kum-0U-jcg">
+                                                <rect key="frame" x="0.0" y="916" width="375" height="195"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="P0N-k3-x4R" secondAttribute="height" multiplier="5:3" id="MSb-nX-QKU"/>
+                                                    <constraint firstAttribute="width" secondItem="Kum-0U-jcg" secondAttribute="height" multiplier="25:13" id="bhO-4V-8zL"/>
                                                 </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bjw-6o-PxT">
+                                                    <size key="itemSize" width="359" height="193"/>
+                                                    <size key="estimatedItemSize" width="359" height="193"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PicCell" id="D4A-Ue-jVG" customClass="PicViewCell" customModule="SlowDiary" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="1" width="359" height="193"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GBp-gJ-FgX">
+                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="193"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Cu-fz-QSP">
+                                                                    <rect key="frame" x="6" y="8" width="325" height="177"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="LpI-ny-DDI">
+                                                                            <rect key="frame" x="22" y="9" width="113" height="160"/>
+                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="15"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="부산 금정구" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbj-IF-qiT">
+                                                                            <rect key="frame" x="188" y="79" width="132" height="21"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <fontDescription key="fontDescription" name="THELetsM" family="THELetsM" pointSize="18"/>
+                                                                            <color key="textColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gK1-dc-SZq">
+                                                                            <rect key="frame" x="160" y="79" width="20" height="20"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <color key="tintColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# 흑발" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0k-Nm-wg9">
+                                                                            <rect key="frame" x="168" y="107" width="152" height="13"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <color key="tintColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="13"/>
+                                                                            <color key="textColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# 증명사진" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5Y-pb-TzO">
+                                                                            <rect key="frame" x="168" y="122" width="152" height="13"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <color key="tintColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="13"/>
+                                                                            <color key="textColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# 얼짱 사진관" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tq3-1x-3i1">
+                                                                            <rect key="frame" x="168" y="137" width="152" height="13"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <color key="tintColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="13"/>
+                                                                            <color key="textColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                            <real key="value" value="3"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                            <size key="value" width="2" height="2"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                            <real key="value" value="0.5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="8"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </collectionViewCellContentView>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="customSize" width="359" height="193"/>
+                                                        <connections>
+                                                            <outlet property="imgView" destination="LpI-ny-DDI" id="T4q-Hv-kpw"/>
+                                                            <outlet property="locIcon" destination="gK1-dc-SZq" id="XLr-4R-UhK"/>
+                                                            <outlet property="locLabel" destination="Tbj-IF-qiT" id="pbt-cw-uvh"/>
+                                                            <outlet property="tag1Label" destination="F0k-Nm-wg9" id="aAR-Uh-m50"/>
+                                                            <outlet property="tag2Label" destination="B5Y-pb-TzO" id="Oth-YQ-ntv"/>
+                                                            <outlet property="tag3Label" destination="Tq3-1x-3i1" id="oT3-Ns-eWL"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="5"/>
+                                                        <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                        <real key="value" value="3"/>
+                                                        <real key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                        <size key="value" width="2" height="2"/>
+                                                        <size key="value" width="0.0" height="0.0"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -446,7 +558,49 @@
                                                         <real key="value" value="0.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                            </view>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="Kj5-I3-0Aw" id="Buc-W5-Kxz"/>
+                                                    <outlet property="delegate" destination="Kj5-I3-0Aw" id="86d-ce-Klg"/>
+                                                </connections>
+                                            </collectionView>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="8lt-cj-iEF">
+                                                <rect key="frame" x="127" y="1109" width="121" height="27"/>
+                                                <color key="tintColor" red="0.9699718356" green="0.79106652740000005" blue="0.67792356009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="pageIndicatorTintColor" red="0.67622367179999998" green="0.75824457300000003" blue="0.849159204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="currentPageIndicatorTintColor" red="0.91211092469999999" green="0.72350984809999996" blue="0.59997725489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pageChanged:" destination="Kj5-I3-0Aw" eventType="valueChanged" id="uM6-ug-LS2"/>
+                                                </connections>
+                                            </pageControl>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1a-Nj-Qta">
+                                                <rect key="frame" x="271" y="1104" width="96" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="THELetsR" family="THELetsR" pointSize="17"/>
+                                                <state key="normal" title="더보기">
+                                                    <color key="titleColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="morePic:" destination="Kj5-I3-0Aw" eventType="touchUpInside" id="bxq-pv-N81"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -462,19 +616,21 @@
                                             <constraint firstItem="BCi-zz-Los" firstAttribute="top" secondItem="m3R-5r-Gfe" secondAttribute="bottom" constant="15" id="EX4-T7-gBX"/>
                                             <constraint firstAttribute="trailing" secondItem="TlL-uA-f4d" secondAttribute="trailing" constant="25" id="Hb8-hG-umF"/>
                                             <constraint firstAttribute="trailing" secondItem="R8T-E0-QcS" secondAttribute="trailing" constant="25" id="JUW-bj-k5y"/>
+                                            <constraint firstItem="8lt-cj-iEF" firstAttribute="centerX" secondItem="Kum-0U-jcg" secondAttribute="centerX" id="MxY-Zq-zgw"/>
                                             <constraint firstItem="yzp-xl-V97" firstAttribute="leading" secondItem="0xF-zd-Sj9" secondAttribute="leading" constant="25" id="Oeu-SI-1Kr"/>
-                                            <constraint firstItem="P0N-k3-x4R" firstAttribute="leading" secondItem="0xF-zd-Sj9" secondAttribute="leading" constant="25" id="Syw-MG-qbE"/>
                                             <constraint firstItem="XwO-ic-3md" firstAttribute="top" secondItem="0xF-zd-Sj9" secondAttribute="top" constant="29" id="TKG-Zp-liv"/>
                                             <constraint firstAttribute="trailing" secondItem="yzp-xl-V97" secondAttribute="trailing" constant="25" id="TVb-rQ-ZLL"/>
                                             <constraint firstItem="m3R-5r-Gfe" firstAttribute="leading" secondItem="0xF-zd-Sj9" secondAttribute="leading" constant="25" id="Ysk-ea-aSK"/>
                                             <constraint firstItem="TlL-uA-f4d" firstAttribute="leading" secondItem="0xF-zd-Sj9" secondAttribute="leading" constant="25" id="YtL-Yo-bKR"/>
+                                            <constraint firstItem="Kum-0U-jcg" firstAttribute="top" secondItem="QoU-LI-SdD" secondAttribute="bottom" constant="15" id="b8U-fs-mPk"/>
                                             <constraint firstItem="QoU-LI-SdD" firstAttribute="leading" secondItem="0xF-zd-Sj9" secondAttribute="leading" constant="25" id="ekc-T3-HrR"/>
                                             <constraint firstItem="yzp-xl-V97" firstAttribute="top" secondItem="R8T-E0-QcS" secondAttribute="bottom" constant="15" id="fTC-Hy-dYl"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kum-0U-jcg" secondAttribute="trailing" id="hKK-Xl-bwb"/>
                                             <constraint firstAttribute="trailing" secondItem="m3R-5r-Gfe" secondAttribute="trailing" constant="25" id="igW-EP-Lth"/>
-                                            <constraint firstAttribute="trailing" secondItem="P0N-k3-x4R" secondAttribute="trailing" constant="25" id="jjZ-pE-NGm"/>
                                             <constraint firstAttribute="trailing" secondItem="QoU-LI-SdD" secondAttribute="trailing" constant="25" id="lVb-Ww-rHK"/>
+                                            <constraint firstItem="8lt-cj-iEF" firstAttribute="top" secondItem="Kum-0U-jcg" secondAttribute="bottom" constant="-2" id="oGM-hC-iix"/>
                                             <constraint firstItem="R8T-E0-QcS" firstAttribute="leading" secondItem="0xF-zd-Sj9" secondAttribute="leading" constant="25" id="oWH-WJ-cgc"/>
-                                            <constraint firstItem="P0N-k3-x4R" firstAttribute="top" secondItem="QoU-LI-SdD" secondAttribute="bottom" constant="15" id="wuL-sM-kFq"/>
+                                            <constraint firstItem="Kum-0U-jcg" firstAttribute="leading" secondItem="0xF-zd-Sj9" secondAttribute="leading" id="tQs-J9-XUH"/>
                                             <constraint firstItem="QoU-LI-SdD" firstAttribute="top" secondItem="TlL-uA-f4d" secondAttribute="bottom" constant="15" id="zY8-s5-SnH"/>
                                         </constraints>
                                     </view>
@@ -504,28 +660,68 @@
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="375" height="1300"/>
+                    <connections>
+                        <outlet property="PicCollectionView" destination="Kum-0U-jcg" id="cOm-xK-PXH"/>
+                        <outlet property="complimentL" destination="Zzh-ZF-vjY" id="RLj-hn-bWI"/>
+                        <outlet property="content1" destination="hnc-O6-MxZ" id="00B-Th-FTd"/>
+                        <outlet property="content10" destination="ygT-eE-La0" id="7rT-SA-Zui"/>
+                        <outlet property="content11" destination="gVu-N8-Wod" id="ZLz-bh-lsM"/>
+                        <outlet property="content12" destination="ApT-kP-A3T" id="coh-pP-EHT"/>
+                        <outlet property="content2" destination="dgX-I1-Ktr" id="8LI-Lg-c3v"/>
+                        <outlet property="content3" destination="qp7-Ij-P2p" id="jyK-b0-Qje"/>
+                        <outlet property="content4" destination="KIF-p8-izb" id="uHJ-fh-eeL"/>
+                        <outlet property="content5" destination="6AX-ND-045" id="XUL-uf-a9x"/>
+                        <outlet property="content6" destination="4WI-aK-zLS" id="pIV-Qc-LLC"/>
+                        <outlet property="content7" destination="g5y-d4-F57" id="zgJ-3c-wP2"/>
+                        <outlet property="content8" destination="acp-qe-QzX" id="dXA-e7-2GL"/>
+                        <outlet property="content9" destination="yYk-Oe-nEb" id="56K-jc-QyS"/>
+                        <outlet property="dateL" destination="bg0-gY-2b4" id="mYU-cg-3Q6"/>
+                        <outlet property="feelImage" destination="rnJ-SJ-HYu" id="RjI-nT-oMF"/>
+                        <outlet property="goalL" destination="XSZ-68-Gb8" id="Oqh-eH-gQH"/>
+                        <outlet property="pager" destination="8lt-cj-iEF" id="wn9-yo-evO"/>
+                        <outlet property="regretL" destination="DIf-SU-czF" id="jfL-0x-Jzg"/>
+                        <outlet property="satisL" destination="h0r-kc-GI2" id="caY-ZD-xtD"/>
+                        <outlet property="satisP" destination="odU-tE-tgZ" id="Rnq-0r-Kzo"/>
+                        <outlet property="titleL" destination="CeG-39-P1I" id="hdv-r1-wbN"/>
+                        <outlet property="weatherImage" destination="C8I-gC-sNN" id="cJa-36-vPB"/>
+                        <segue destination="0rV-01-AU1" kind="presentation" identifier="showWrite" modalPresentationStyle="fullScreen" id="0TA-kX-POG"/>
+                        <segue destination="jI6-6z-qW0" kind="presentation" identifier="showPicture" modalPresentationStyle="fullScreen" id="bt6-io-Nhm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Czv-0f-T4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="173.59999999999999" y="150"/>
         </scene>
-        <!--Write-->
+        <!--WriteViewController-->
         <scene sceneID="XdD-UO-nYH">
             <objects>
-                <viewControllerPlaceholder storyboardName="Write" id="0rV-01-AU1" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Write" referencedIdentifier="WriteViewController" id="0rV-01-AU1" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="PTQ-gb-7hc"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULO-En-9nx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="687" y="150"/>
+            <point key="canvasLocation" x="758" y="61"/>
+        </scene>
+        <!--PictureViewController-->
+        <scene sceneID="3MD-GC-Lct">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Picture" referencedIdentifier="PictureViewController" id="jI6-6z-qW0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NXh-Ah-Mf4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4l-bG-gxT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="260"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="87.333335876464844" height="140.33332824707031"/>
         <image name="angry" width="64" height="64"/>
         <image name="cloud.rain" catalog="system" width="128" height="125"/>
         <image name="doc.append.fill" catalog="system" width="115" height="128"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
-        <image name="증명사진" width="174" height="238"/>
+        <image name="paperImage" width="262" height="421"/>
+        <image name="pic" width="174" height="238"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

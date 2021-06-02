@@ -33,6 +33,11 @@
 		438D47B72654FB3400FC3E5B /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D47B62654FB3400FC3E5B /* WeatherViewModel.swift */; };
 		438D47BC2654FB7100FC3E5B /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D47BB2654FB7100FC3E5B /* WeatherModel.swift */; };
 		438D47C12654FE6900FC3E5B /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D47C02654FE6900FC3E5B /* WeatherData.swift */; };
+		439E443F2664D5500037DC9F /* Picture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439E443E2664D5500037DC9F /* Picture.storyboard */; };
+		43B7C6782665EE6B006184FC /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B7C6772665EE6B006184FC /* PictureViewController.swift */; };
+		43B7C67A2665EE86006184FC /* UpdatePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B7C6792665EE86006184FC /* UpdatePictureViewController.swift */; };
+		43B7C67C2665F01F006184FC /* PictureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B7C67B2665F01F006184FC /* PictureViewModel.swift */; };
+		43B7C67E2665F448006184FC /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B7C67D2665F448006184FC /* PictureModel.swift */; };
 		43BFE9BB265E083600565E03 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFE9BA265E083600565E03 /* LoginViewController.swift */; };
 		43BFE9BD265E086000565E03 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFE9BC265E086000565E03 /* SignUpViewController.swift */; };
 		43BFE9C0265E0D4700565E03 /* Tab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BFE9BF265E0D4700565E03 /* Tab.storyboard */; };
@@ -41,6 +46,9 @@
 		43BFE9C8265E466800565E03 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFE9C7265E466800565E03 /* ProfileViewModel.swift */; };
 		43BFE9CC265F7D2B00565E03 /* chProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFE9CB265F7D2B00565E03 /* chProfileViewController.swift */; };
 		43BFE9CE265F9CFC00565E03 /* UIView+Bordered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFE9CD265F9CFC00565E03 /* UIView+Bordered.swift */; };
+		43D51EB62667293900041677 /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D51EB52667293900041677 /* Content.storyboard */; };
+		43D51EB82667296F00041677 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D51EB72667296F00041677 /* ContentViewController.swift */; };
+		43DF33A4266764CC0069483D /* UpdateContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF33A3266764CC0069483D /* UpdateContentViewController.swift */; };
 		43DF96B126391CD300D2EC70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF96B026391CD300D2EC70 /* AppDelegate.swift */; };
 		43DF96B326391CD300D2EC70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF96B226391CD300D2EC70 /* SceneDelegate.swift */; };
 		43DF96B526391CD300D2EC70 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF96B426391CD300D2EC70 /* TabController.swift */; };
@@ -48,6 +56,10 @@
 		43DF96BD26391CD300D2EC70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DF96BB26391CD300D2EC70 /* LaunchScreen.storyboard */; };
 		43DF96C826391CD400D2EC70 /* SlowDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF96C726391CD400D2EC70 /* SlowDiaryTests.swift */; };
 		43DF96D326391CD400D2EC70 /* SlowDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF96D226391CD400D2EC70 /* SlowDiaryUITests.swift */; };
+		43EBA8FD2665B31200A8F6FB /* PictureViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EBA8FC2665B31200A8F6FB /* PictureViewCell.swift */; };
+		43EBA8FF2665B65E00A8F6FB /* PictureUpdateViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EBA8FE2665B65E00A8F6FB /* PictureUpdateViewCell.swift */; };
+		43EBA9022665C84400A8F6FB /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EBA9012665C84400A8F6FB /* WriteViewController.swift */; };
+		43EBA9052665C86600A8F6FB /* WriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EBA9042665C86600A8F6FB /* WriteViewModel.swift */; };
 		43F15D3C2660C27200E725DF /* Write.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F15D3B2660C27200E725DF /* Write.storyboard */; };
 		68FFC0D9EED11848896FB487 /* Pods_SlowDiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6287EAE88590369C4F8480 /* Pods_SlowDiaryTests.framework */; };
 		AEE44FEA31C81B97508B7B31 /* Pods_SlowDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44162175A2ED9965E325733F /* Pods_SlowDiary.framework */; };
@@ -90,6 +102,11 @@
 		438D47B62654FB3400FC3E5B /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		438D47BB2654FB7100FC3E5B /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		438D47C02654FE6900FC3E5B /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		439E443E2664D5500037DC9F /* Picture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Picture.storyboard; sourceTree = "<group>"; };
+		43B7C6772665EE6B006184FC /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		43B7C6792665EE86006184FC /* UpdatePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePictureViewController.swift; sourceTree = "<group>"; };
+		43B7C67B2665F01F006184FC /* PictureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewModel.swift; sourceTree = "<group>"; };
+		43B7C67D2665F448006184FC /* PictureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureModel.swift; sourceTree = "<group>"; };
 		43BFE9BA265E083600565E03 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		43BFE9BC265E086000565E03 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		43BFE9BF265E0D4700565E03 /* Tab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab.storyboard; sourceTree = "<group>"; };
@@ -98,6 +115,9 @@
 		43BFE9C7265E466800565E03 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		43BFE9CB265F7D2B00565E03 /* chProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chProfileViewController.swift; sourceTree = "<group>"; };
 		43BFE9CD265F9CFC00565E03 /* UIView+Bordered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Bordered.swift"; sourceTree = "<group>"; };
+		43D51EB52667293900041677 /* Content.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
+		43D51EB72667296F00041677 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		43DF33A3266764CC0069483D /* UpdateContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateContentViewController.swift; sourceTree = "<group>"; };
 		43DF96AD26391CD300D2EC70 /* SlowDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DF96B026391CD300D2EC70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43DF96B226391CD300D2EC70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +131,10 @@
 		43DF96CE26391CD400D2EC70 /* SlowDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DF96D226391CD400D2EC70 /* SlowDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowDiaryUITests.swift; sourceTree = "<group>"; };
 		43DF96D426391CD400D2EC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43EBA8FC2665B31200A8F6FB /* PictureViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewCell.swift; sourceTree = "<group>"; };
+		43EBA8FE2665B65E00A8F6FB /* PictureUpdateViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureUpdateViewCell.swift; sourceTree = "<group>"; };
+		43EBA9012665C84400A8F6FB /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		43EBA9042665C86600A8F6FB /* WriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewModel.swift; sourceTree = "<group>"; };
 		43F15D3B2660C27200E725DF /* Write.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Write.storyboard; sourceTree = "<group>"; };
 		44162175A2ED9965E325733F /* Pods_SlowDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlowDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6287EAE88590369C4F8480 /* Pods_SlowDiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlowDiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +178,8 @@
 			children = (
 				431FFA192652302600FDFE1F /* SetTableViewCell.swift */,
 				438D47B12654F56000FC3E5B /* WeatherViewCell.swift */,
+				43EBA8FC2665B31200A8F6FB /* PictureViewCell.swift */,
+				43EBA8FE2665B65E00A8F6FB /* PictureUpdateViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -177,6 +203,7 @@
 		433A44122660942C00AAC60B /* Write */ = {
 			isa = PBXGroup;
 			children = (
+				43B7C67D2665F448006184FC /* PictureModel.swift */,
 			);
 			path = Write;
 			sourceTree = "<group>";
@@ -362,6 +389,7 @@
 		43DF96EC26391D6200D2EC70 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				43EBA9002665C83100A8F6FB /* Write */,
 				43BFE9B9265E081200565E03 /* Login */,
 				437EF1942658F3F7002E0431 /* Profile */,
 				437EF1932658F3ED002E0431 /* Today */,
@@ -375,6 +403,7 @@
 		43DF96F02639243F00D2EC70 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				43EBA9032665C85500A8F6FB /* Write */,
 				43BFE9C6265E465200565E03 /* Profile */,
 				43BFE9C1265E302F00565E03 /* Login */,
 				438D47B62654FB3400FC3E5B /* WeatherViewModel.swift */,
@@ -403,10 +432,33 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		43EBA9002665C83100A8F6FB /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				43EBA9012665C84400A8F6FB /* WriteViewController.swift */,
+				43B7C6772665EE6B006184FC /* PictureViewController.swift */,
+				43B7C6792665EE86006184FC /* UpdatePictureViewController.swift */,
+				43D51EB72667296F00041677 /* ContentViewController.swift */,
+				43DF33A3266764CC0069483D /* UpdateContentViewController.swift */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
+		43EBA9032665C85500A8F6FB /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				43EBA9042665C86600A8F6FB /* WriteViewModel.swift */,
+				43B7C67B2665F01F006184FC /* PictureViewModel.swift */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
 		43F15D392660C25500E725DF /* Write */ = {
 			isa = PBXGroup;
 			children = (
 				43F15D3B2660C27200E725DF /* Write.storyboard */,
+				439E443E2664D5500037DC9F /* Picture.storyboard */,
+				43D51EB52667293900041677 /* Content.storyboard */,
 			);
 			path = Write;
 			sourceTree = "<group>";
@@ -545,10 +597,12 @@
 			files = (
 				431FF9FF2652080600FDFE1F /* Profile.storyboard in Resources */,
 				43DF96BD26391CD300D2EC70 /* LaunchScreen.storyboard in Resources */,
+				43D51EB62667293900041677 /* Content.storyboard in Resources */,
 				43F15D3C2660C27200E725DF /* Write.storyboard in Resources */,
 				431FF9FA265207DF00FDFE1F /* Today.storyboard in Resources */,
 				43DF96BA26391CD300D2EC70 /* Assets.xcassets in Resources */,
 				43BFE9C0265E0D4700565E03 /* Tab.storyboard in Resources */,
+				439E443F2664D5500037DC9F /* Picture.storyboard in Resources */,
 				437EF1822658E1BA002E0431 /* NanumPen.ttf in Resources */,
 				437EF1722658E004002E0431 /* THEletssmileM.otf in Resources */,
 				437EF1782658E004002E0431 /* THEletssmileL.otf in Resources */,
@@ -715,11 +769,21 @@
 				43BFE9CE265F9CFC00565E03 /* UIView+Bordered.swift in Sources */,
 				431FFA0E2652085200FDFE1F /* ProfileViewController.swift in Sources */,
 				43DF96B526391CD300D2EC70 /* TabController.swift in Sources */,
+				43B7C67C2665F01F006184FC /* PictureViewModel.swift in Sources */,
+				43EBA9022665C84400A8F6FB /* WriteViewController.swift in Sources */,
+				43EBA9052665C86600A8F6FB /* WriteViewModel.swift in Sources */,
+				43EBA8FD2665B31200A8F6FB /* PictureViewCell.swift in Sources */,
+				43B7C6782665EE6B006184FC /* PictureViewController.swift in Sources */,
+				43DF33A4266764CC0069483D /* UpdateContentViewController.swift in Sources */,
 				438D47B22654F56000FC3E5B /* WeatherViewCell.swift in Sources */,
 				43BFE9C3265E304200565E03 /* LoginViewModel.swift in Sources */,
+				43D51EB82667296F00041677 /* ContentViewController.swift in Sources */,
 				43BFE9C5265E371000565E03 /* SignUpViewModel.swift in Sources */,
+				43B7C67E2665F448006184FC /* PictureModel.swift in Sources */,
 				43DF96B126391CD300D2EC70 /* AppDelegate.swift in Sources */,
+				43B7C67A2665EE86006184FC /* UpdatePictureViewController.swift in Sources */,
 				43BFE9CC265F7D2B00565E03 /* chProfileViewController.swift in Sources */,
+				43EBA8FF2665B65E00A8F6FB /* PictureUpdateViewCell.swift in Sources */,
 				431FFA092652084700FDFE1F /* TodayViewController.swift in Sources */,
 				43DF96B326391CD300D2EC70 /* SceneDelegate.swift in Sources */,
 				438D47BC2654FB7100FC3E5B /* WeatherModel.swift in Sources */,

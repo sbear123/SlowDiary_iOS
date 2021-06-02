@@ -25,8 +25,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1020"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8c7-9W-kHz">
-                                <rect key="frame" x="0.0" y="44" width="414" height="880"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8c7-9W-kHz">
+                                <rect key="frame" x="0.0" y="44" width="375" height="893"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1h-nJ-bT0">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="880"/>
@@ -71,7 +71,7 @@
                                                         <color key="value" red="0.32549019610000002" green="0.4431372549" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="fakedSelectedDay">
-                                                        <integer key="value" value="31"/>
+                                                        <integer key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="titlePlaceholderColor">
                                                         <color key="value" systemColor="systemGray5Color"/>
