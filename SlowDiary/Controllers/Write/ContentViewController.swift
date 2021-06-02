@@ -9,11 +9,11 @@ import UIKit
 
 class ContentViewController: UIViewController {
 
-    @IBAction func back(_ sender: Any) {
+    @IBAction func back(_ sender: UIButton) {
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func updateContent(_ sender: Any) {
+    @IBAction func updateContent(_ sender: UIButton) {
         self.performSegue(withIdentifier: "updateContent", sender: self)
     }
     

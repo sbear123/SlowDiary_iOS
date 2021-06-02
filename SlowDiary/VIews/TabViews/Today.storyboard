@@ -684,7 +684,7 @@
                         <outlet property="satisP" destination="odU-tE-tgZ" id="Rnq-0r-Kzo"/>
                         <outlet property="titleL" destination="CeG-39-P1I" id="hdv-r1-wbN"/>
                         <outlet property="weatherImage" destination="C8I-gC-sNN" id="cJa-36-vPB"/>
-                        <segue destination="0rV-01-AU1" kind="presentation" identifier="showWrite" modalPresentationStyle="fullScreen" id="0TA-kX-POG"/>
+                        <segue destination="0rV-01-AU1" kind="presentation" identifier="showContent" modalPresentationStyle="fullScreen" id="0TA-kX-POG"/>
                         <segue destination="jI6-6z-qW0" kind="presentation" identifier="showPicture" modalPresentationStyle="fullScreen" id="bt6-io-Nhm"/>
                     </connections>
                 </viewController>
@@ -692,10 +692,10 @@
             </objects>
             <point key="canvasLocation" x="173.59999999999999" y="150"/>
         </scene>
-        <!--WriteViewController-->
+        <!--ContentViewController-->
         <scene sceneID="XdD-UO-nYH">
             <objects>
-                <viewControllerPlaceholder storyboardName="Write" referencedIdentifier="WriteViewController" id="0rV-01-AU1" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Content" referencedIdentifier="ContentViewController" id="0rV-01-AU1" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="PTQ-gb-7hc"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULO-En-9nx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

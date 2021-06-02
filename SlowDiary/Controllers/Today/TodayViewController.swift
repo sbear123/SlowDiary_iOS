@@ -43,7 +43,7 @@ class TodayViewController: UIViewController {
     }
     
     @IBAction func moreWrite(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "showWrite", sender: self)
+        self.performSegue(withIdentifier: "showContent", sender: self)
     }
     
     let pVM: PictureViewModel = PictureViewModel.shared

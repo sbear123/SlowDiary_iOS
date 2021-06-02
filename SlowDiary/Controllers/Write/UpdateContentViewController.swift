@@ -9,13 +9,14 @@ import UIKit
 
 class UpdateContentViewController: UIViewController {
 
-    @IBAction func back(_ sender: Any) {
+    @IBAction func back(_ sender: UIButton) {
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func finishContent(_ sender: Any) {
+    @IBAction func finishContent(_ sender: UIButton) {
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
