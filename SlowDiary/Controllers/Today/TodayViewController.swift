@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Floaty
 
 class TodayViewController: UIViewController {
 
@@ -32,6 +33,7 @@ class TodayViewController: UIViewController {
     @IBOutlet var regretL: UILabel!
     @IBOutlet var PicCollectionView: UICollectionView!
     @IBOutlet var pager: UIPageControl!
+    @IBOutlet var floatyB: Floaty!
     
     @IBAction func pageChanged(_ sender: UIPageControl) {
         let indexPath = IndexPath(item: sender.currentPage, section: 0)
@@ -57,6 +59,17 @@ class TodayViewController: UIViewController {
         
         pager.numberOfPages = pVM.cntData()
         pager.currentPage = 0
+        
+        if floatyB.items.count < 2 {
+            floatyB.addItem(icon: UIImage(systemName: "pencil"), handler: {_ in
+                self.performSegue(withIdentifier: "showContent", sender: self)
+            })
+            floatyB.addItem(icon: UIImage(systemName: "camera"), handler: {_ in
+                self.performSegue(withIdentifier: "showPicture", sender: self)
+            })
+            
+            self.view.addSubview(floatyB)
+        }
         
         drawView()
     }

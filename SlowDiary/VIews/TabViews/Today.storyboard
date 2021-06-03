@@ -645,12 +645,40 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="LjJ-UA-RVW"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="3eg-fR-f2d"/>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2n6-vf-rbz" customClass="Floaty" customModule="Floaty">
+                                <rect key="frame" x="320" y="1162" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="FgK-A8-wlH"/>
+                                    <constraint firstAttribute="height" constant="45" id="iJx-BF-6MG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.91211092469999999" green="0.72350984809999996" blue="0.59997725489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="plusColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="itemShadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="itemImageColor">
+                                        <color key="value" red="0.3980070651" green="0.51578754189999998" blue="0.61177855729999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="itemSize">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoCloseOnTap" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1BN-9N-tFG"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="1BN-9N-tFG" firstAttribute="bottom" secondItem="2n6-vf-rbz" secondAttribute="bottom" constant="10" id="3Ge-60-Bg1"/>
                             <constraint firstItem="1BN-9N-tFG" firstAttribute="trailing" secondItem="60P-0t-kGf" secondAttribute="trailing" id="C6Y-R6-pEh"/>
                             <constraint firstItem="60P-0t-kGf" firstAttribute="leading" secondItem="1BN-9N-tFG" secondAttribute="leading" id="Rh4-cT-znL"/>
+                            <constraint firstItem="1BN-9N-tFG" firstAttribute="trailing" secondItem="2n6-vf-rbz" secondAttribute="trailing" constant="10" id="Xeo-92-GAe"/>
                             <constraint firstItem="1BN-9N-tFG" firstAttribute="bottom" secondItem="60P-0t-kGf" secondAttribute="bottom" id="emv-zQ-UzP"/>
                             <constraint firstItem="60P-0t-kGf" firstAttribute="top" secondItem="1BN-9N-tFG" secondAttribute="top" id="m8t-hZ-kJf"/>
                         </constraints>
@@ -677,6 +705,7 @@
                         <outlet property="content9" destination="yYk-Oe-nEb" id="56K-jc-QyS"/>
                         <outlet property="dateL" destination="bg0-gY-2b4" id="mYU-cg-3Q6"/>
                         <outlet property="feelImage" destination="rnJ-SJ-HYu" id="RjI-nT-oMF"/>
+                        <outlet property="floatyB" destination="2n6-vf-rbz" id="CMo-vN-SHf"/>
                         <outlet property="goalL" destination="XSZ-68-Gb8" id="Oqh-eH-gQH"/>
                         <outlet property="pager" destination="8lt-cj-iEF" id="wn9-yo-evO"/>
                         <outlet property="regretL" destination="DIf-SU-czF" id="jfL-0x-Jzg"/>
