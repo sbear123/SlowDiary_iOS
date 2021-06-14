@@ -17,12 +17,24 @@ class PictureUpdateViewCell: UITableViewCell {
     @IBOutlet weak var tag3Label: UILabel!
     @IBOutlet weak var deleteButton: UIButton!
     
-    func update(_ data: PictureModel) {
-        self.imgView.image = UIImage(named: data.img)
-        self.locLabel.text = data.loc
-        self.tag1Label.text = data.tag1
-        self.tag2Label.text = data.tag2
-        self.tag3Label.text = data.tag3
+    let vm: PictureViewModel = PictureViewModel.shared
+    
+    @IBAction func deletePic(_ sender: Any) {
+        
+    }
+    
+    func update(_ data: Picture) {
+        let url = URL(string: data.url!)
+        do {
+            let img = try Data(contentsOf: url!)
+            imgView.image = UIImage(data: img)
+        } catch  {
+            
+        }
+        self.locLabel.text = data.place
+        tag1Label.text = "# \(data.tag1!)"
+        tag2Label.text = "# \(data.tag2!)"
+        tag3Label.text = "# \(data.tag3!)"
     }
     
     override func awakeFromNib() {
@@ -38,7 +50,7 @@ class PictureUpdateViewCell: UITableViewCell {
 
 class PictureAddViewCell: UITableViewCell {
     
-    @IBOutlet weak var AddButton: UIView!
+    @IBOutlet var plus: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

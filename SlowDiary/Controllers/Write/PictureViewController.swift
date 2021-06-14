@@ -8,8 +8,13 @@
 import UIKit
 
 class PictureViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
+    @IBOutlet var tableView: UITableView!
+    
     @IBAction func updatePic(_ sender: Any) {
+        if bottomView != nil {
+            bottomView?.PicCollectionView.reloadData()
+        }
         self.performSegue(withIdentifier: "updatePicture", sender: self)
     }
     
@@ -18,21 +23,27 @@ class PictureViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     let vm: PictureViewModel = PictureViewModel.shared
+    var bottomView: TodayViewController?
+    var picture: [Picture] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.tableFooterView = UIView.init(frame: .zero)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return vm.cntData()
+        return picture.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PictureCell", for: indexPath) as! PictureViewCell
         
         let index: Int = indexPath.row
-        let data: PictureModel = vm.getData(index)
+        let data: Picture = picture[index]
         
         cell.update(data: data)
         

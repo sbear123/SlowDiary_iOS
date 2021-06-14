@@ -119,7 +119,9 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="nameL" destination="eVC-x5-SoW" id="hav-mh-YhJ"/>
                         <outlet property="tableview" destination="l6g-uS-vjK" id="xnE-we-rQl"/>
+                        <outlet property="wordL" destination="wub-kE-tRC" id="aXV-bF-dkd"/>
                         <segue destination="iEv-oG-H0E" kind="show" identifier="showChProfile" id="XgQ-l3-hRl"/>
                     </connections>
                 </viewController>

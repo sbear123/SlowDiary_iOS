@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import CoreLocation
 
-class TabController: UITabBarController {
-
+class TabController: UITabBarController, CLLocationManagerDelegate {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

@@ -14,7 +14,7 @@ class WeatherViewCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     
     func update(data: WeatherModel) {
-        dateLabel.text = data.date.capitalized
+        dateLabel.text = data.date?.capitalized
         imgView.image = UIImage(systemName: data.conditionName)
         tempLabel.text = data.tempString
         nameLabel.text = data.name

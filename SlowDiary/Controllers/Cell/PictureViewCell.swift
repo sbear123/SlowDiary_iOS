@@ -15,12 +15,18 @@ class PictureViewCell: UITableViewCell {
     @IBOutlet weak var tag2Label: UILabel!
     @IBOutlet weak var tag3Label: UILabel!
     
-    func update(data: PictureModel) {
-        imgView.image = UIImage(systemName: data.img)
-        locLabel.text = data.loc
-        tag1Label.text = data.tag1
-        tag2Label.text = data.tag2
-        tag3Label.text = data.tag3
+    func update(data: Picture) {
+        let url = URL(string: data.url!)
+        do {
+            let img = try Data(contentsOf: url!)
+            imgView.image = UIImage(data: img)
+        } catch  {
+            
+        }
+        locLabel.text = data.place
+        tag1Label.text = "# \(data.tag1!)"
+        tag2Label.text = "# \(data.tag2!)"
+        tag3Label.text = "# \(data.tag3!)"
     }
     
     override func awakeFromNib() {
@@ -42,12 +48,18 @@ class PicViewCell: UICollectionViewCell {
     @IBOutlet weak var tag2Label: UILabel!
     @IBOutlet weak var tag3Label: UILabel!
     
-    func update(data: PictureModel) {
-        imgView.image = UIImage(named: data.img)
+    func update(data: Picture) {
+        let url = URL(string: data.url!)
+        do {
+            let img = try Data(contentsOf: url!)
+            imgView.image = UIImage(data: img)
+        } catch  {
+            
+        }
         locIcon.image = UIImage(systemName: "mappin.and.ellipse")
-        locLabel.text = data.loc
-        tag1Label.text = data.tag1
-        tag2Label.text = data.tag2
-        tag3Label.text = data.tag3
+        locLabel.text = data.place
+        tag1Label.text = "# \(data.tag1!)"
+        tag2Label.text = "# \(data.tag2!)"
+        tag3Label.text = "# \(data.tag3!)"
     }
 }

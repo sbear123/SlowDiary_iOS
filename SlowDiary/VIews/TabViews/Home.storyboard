@@ -35,7 +35,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이번달은 누구보다 열심히 살기" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aM-JN-KZ4">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="로딩중 입니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aM-JN-KZ4">
                                                         <rect key="frame" x="8" y="16" width="359" height="38"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="THELetsM" family="THELetsM" pointSize="21"/>
@@ -49,9 +49,6 @@
                                                 <rect key="frame" x="0.0" y="69" width="375" height="375"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
-                                                        <color key="value" red="1" green="0.93109405215453522" blue="0.79384752177053675" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
                                                         <color key="value" red="0.32549019610000002" green="0.4431372549" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
@@ -64,14 +61,11 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderSelectionColor">
                                                         <color key="value" red="0.32549019610000002" green="0.4431372549" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
-                                                        <color key="value" red="0.66194235981241833" green="0.83356981625531645" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="titleSelectionColor">
                                                         <color key="value" red="0.32549019610000002" green="0.4431372549" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="fakedSelectedDay">
-                                                        <integer key="value" value="1"/>
+                                                        <integer key="value" value="16"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="titlePlaceholderColor">
                                                         <color key="value" systemColor="systemGray5Color"/>
@@ -85,6 +79,15 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="subtitleSelectionColor">
                                                         <color key="value" red="0.3980070651" green="0.51578754189999998" blue="0.61177855729999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                                        <color key="value" red="1" green="0.99224108662402377" blue="0.95038217993246987" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="eventSelectionColor">
+                                                        <color key="value" red="0.32549019610000002" green="0.4431372549" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
+                                                        <color key="value" red="1" green="0.97018602870000004" blue="0.85425422799999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -219,6 +222,17 @@
                                                 <rect key="frame" x="183" y="452" width="169" height="24"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCP-5M-ukh">
+                                                <rect key="frame" x="8" y="452" width="110" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="THELetsM" family="THELetsM" pointSize="14"/>
+                                                <state key="normal" title="작성한 글 보기">
+                                                    <color key="titleColor" red="0.9699718356" green="0.79106652740000005" blue="0.67792356009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showWrite:" destination="aUA-PT-QAK" eventType="touchUpInside" id="hNP-f2-mz1"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -280,14 +294,28 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="375" height="1020"/>
                     <connections>
+                        <outlet property="calendar" destination="fTc-YT-i39" id="R8T-68-wvd"/>
+                        <outlet property="collectionview" destination="Z7J-AB-vcp" id="UAb-k0-2gt"/>
                         <outlet property="floatyB" destination="6Md-L5-LRI" id="8ve-6l-Tuk"/>
+                        <outlet property="goalL" destination="7aM-JN-KZ4" id="FdG-Xi-xcD"/>
+                        <outlet property="nameL" destination="isj-TM-LF7" id="hf8-sR-8lU"/>
+                        <outlet property="wordL" destination="poe-eQ-maV" id="hmX-Jg-sH8"/>
                         <segue destination="5tv-Rf-Yhq" kind="presentation" identifier="showWrite" modalPresentationStyle="fullScreen" id="0vf-yb-Q2o"/>
                         <segue destination="9pt-IL-smk" kind="presentation" identifier="showPicture" modalPresentationStyle="fullScreen" id="VtD-pX-UOt"/>
+                        <segue destination="WF5-Xb-Xb8" kind="presentation" identifier="readWrite" modalPresentationStyle="fullScreen" id="iSp-i1-ZnI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ef9-BR-zLE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-338.39999999999998" y="148.52216748768473"/>
+        </scene>
+        <!--ReadViewController-->
+        <scene sceneID="IzL-e2-bjR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Write" referencedIdentifier="ReadViewController" id="WF5-Xb-Xb8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rzZ-Rl-buB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="326" y="21"/>
         </scene>
         <!--WriteViewController-->
         <scene sceneID="BA3-P1-3g8">
@@ -297,10 +325,10 @@
             </objects>
             <point key="canvasLocation" x="317" y="100"/>
         </scene>
-        <!--PictureViewController-->
+        <!--UpdatePictureViewController-->
         <scene sceneID="hmh-cU-u25">
             <objects>
-                <viewControllerPlaceholder storyboardName="Picture" referencedIdentifier="PictureViewController" id="9pt-IL-smk" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Picture" referencedIdentifier="UpdatePictureViewController" id="9pt-IL-smk" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4H-Nf-9fL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="326" y="222"/>

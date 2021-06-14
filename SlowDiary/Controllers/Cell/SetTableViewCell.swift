@@ -37,4 +37,10 @@ class SetTableViewCell: UITableViewCell {
 
         self.layer.rasterizationScale = UIScreen.main.scale
       }
+    
+    func update(t: String, img: String) {
+        icon.image = UIImage(systemName: img)
+        title.text = t
+        nextIcon.image = UIImage(systemName: "chevron.right")
+    }
 }

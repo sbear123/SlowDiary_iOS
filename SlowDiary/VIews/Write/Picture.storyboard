@@ -31,10 +31,10 @@
                                 <color key="backgroundColor" red="0.32549019610000002" green="0.4431372549" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0km-1x-ast">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5y-xI-v9c">
-                                        <rect key="frame" x="15" y="75" width="43" height="37"/>
+                                        <rect key="frame" x="15" y="66" width="43" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="chevron.left" catalog="system">
@@ -45,7 +45,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYC-H0-LyS">
-                                        <rect key="frame" x="299" y="71" width="61" height="41"/>
+                                        <rect key="frame" x="292" y="62" width="61" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="THELetsM" family="THELetsM" pointSize="18"/>
                                         <state key="normal" title="수정">
@@ -58,11 +58,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.32549019610000002" green="0.4431372549" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="0km-1x-ast" secondAttribute="height" multiplier="375:124" id="hOa-A9-tFi"/>
+                                    <constraint firstAttribute="width" secondItem="0km-1x-ast" secondAttribute="height" multiplier="375:116" id="ndP-hg-V24"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="220" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JQH-6L-LWf">
-                                <rect key="frame" x="0.0" y="124" width="375" height="654"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="662"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PictureCell" rowHeight="220" id="05y-hh-Tq6" customClass="PictureViewCell" customModule="SlowDiary" customModuleProvider="target">
@@ -76,7 +76,7 @@
                                                     <rect key="frame" x="25" y="13" width="325" height="195"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="bKX-1u-HeV">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="picImage" translatesAutoresizingMaskIntoConstraints="NO" id="bKX-1u-HeV">
                                                             <rect key="frame" x="13" y="18" width="120" height="160"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                             <userDefinedRuntimeAttributes>
@@ -85,8 +85,8 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="부산 금정구" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U70-uK-kIs">
-                                                            <rect key="frame" x="179" y="89" width="132" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="작성된 지역이 없습니다." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U70-uK-kIs">
+                                                            <rect key="frame" x="179" y="89" width="146" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="THELetsM" family="THELetsM" pointSize="18"/>
                                                             <color key="textColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -97,7 +97,7 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="tintColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# 흑발" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQC-bD-lCO">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# 사진을 추가해주세요" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQC-bD-lCO">
                                                             <rect key="frame" x="159" y="117" width="152" height="13"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="tintColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -172,6 +172,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="JQH-6L-LWf" id="1Mn-GP-4de"/>
                         <segue destination="upW-4N-yd3" kind="presentation" identifier="updatePicture" modalPresentationStyle="fullScreen" id="QyN-EQ-Nuw"/>
                     </connections>
                 </viewController>
@@ -182,7 +183,7 @@
         <!--Update Picture View Controller-->
         <scene sceneID="6N0-6M-4LM">
             <objects>
-                <viewController id="upW-4N-yd3" customClass="UpdatePictureViewController" customModule="SlowDiary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UpdatePictureViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="upW-4N-yd3" customClass="UpdatePictureViewController" customModule="SlowDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="otH-yE-4BD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,7 +233,7 @@
                                                     <rect key="frame" x="25" y="13" width="325" height="195"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="Pn7-jW-Utf">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="picImage" translatesAutoresizingMaskIntoConstraints="NO" id="Pn7-jW-Utf">
                                                             <rect key="frame" x="13" y="18" width="120" height="160"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                             <userDefinedRuntimeAttributes>
@@ -286,6 +287,9 @@
                                                                 <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="heavy"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="deletePic:" destination="B2S-yb-vkq" eventType="touchUpInside" id="EGr-6u-tG1"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -309,6 +313,7 @@
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                         <connections>
                                             <outlet property="deleteButton" destination="aBp-We-vgX" id="pam-lv-2ok"/>
                                             <outlet property="imgView" destination="Pn7-jW-Utf" id="Hoz-kr-NPr"/>
@@ -330,15 +335,13 @@
                                                     <rect key="frame" x="25" y="13" width="325" height="195"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxU-om-VLq">
-                                                            <rect key="frame" x="100" y="35" width="125" height="125"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="381-UL-adc">
+                                                            <rect key="frame" x="145" y="79" width="35" height="36"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <color key="tintColor" red="0.3980070651" green="0.51578754189999998" blue="0.61177855729999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            <state key="normal">
-                                                                <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
-                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="heavy"/>
-                                                            </state>
-                                                        </button>
+                                                            <color key="tintColor" red="0.32549019607843138" green="0.44313725490196076" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <userDefinedRuntimeAttributes>
@@ -361,8 +364,9 @@
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                         <connections>
-                                            <outlet property="AddButton" destination="TE9-Jz-Rs0" id="zLK-rm-1S1"/>
+                                            <outlet property="plus" destination="381-UL-adc" id="QtF-rV-yZt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -376,16 +380,37 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <size key="freeformSize" width="375" height="812"/>
+                    <connections>
+                        <outlet property="tableView" destination="dnZ-Ye-7Ks" id="N4c-Bw-lK5"/>
+                        <segue destination="wbc-Fl-ORp" kind="presentation" identifier="addPic" id="l7U-lo-o89"/>
+                        <segue destination="C07-4w-1Wc" kind="presentation" identifier="updatePic" id="4hh-36-Xp4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22k-d9-e55" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="193" y="153"/>
+            <point key="canvasLocation" x="192.80000000000001" y="152.95566502463055"/>
+        </scene>
+        <!--MakePictureViewController-->
+        <scene sceneID="Xfj-np-hXO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UpdatePic" referencedIdentifier="MakePictureViewController" id="wbc-Fl-ORp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lAK-Q3-oJn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="66"/>
+        </scene>
+        <!--MakePictureViewController-->
+        <scene sceneID="qB1-qQ-010">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UpdatePic" referencedIdentifier="MakePictureViewController" id="C07-4w-1Wc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLx-sE-o3r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="211"/>
         </scene>
     </scenes>
     <resources>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
-        <image name="pic" width="174" height="238"/>
+        <image name="picImage" width="222" height="314"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">

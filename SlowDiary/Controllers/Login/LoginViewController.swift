@@ -31,11 +31,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func login(_ sender: Any) {
-        print(id.text!)
-        print(pw.text!)
-        print("-------------------")
-        let msg = vm.CheckLogin(id.text!, pw.text!)
-        makeAlert(title: vm.alertMsg[msg]!, msg: msg)
+        vm.CheckLogin(id.text!, pw.text!){ msg in
+            self.makeAlert(title: self.vm.GetAlertMsg(msg), msg: msg)
+        }
     }
     
     func drawView() {

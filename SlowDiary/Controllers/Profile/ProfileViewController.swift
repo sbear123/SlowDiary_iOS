@@ -10,7 +10,10 @@ import UIKit
 class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let vm:ProfileViewModel = ProfileViewModel()
+    let uVM: UserViewModel = UserViewModel.shared
     
+    @IBOutlet var nameL: UILabel!
+    @IBOutlet var wordL: UILabel!
     @IBOutlet var tableview: UITableView!
     
     override func viewDidLoad() {
@@ -19,21 +22,56 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         viewWillAppear(true)
         self.tableview.delegate = self
         self.tableview.dataSource = self
+        nameL.text = "\(uVM.getUserData().name!)님,"
+        wordL.text = uVM.word
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        wordL.text = uVM.word
+        nameL.text = "\(uVM.getUserData().name!)님,"
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.section {
         case 0:
-            chProfile()
+            chGoal()
         case 1:
+            chProfile()
+        case 2:
             checkLogOut()
         default:
             return
         }
     }
     
+    func chGoal() {
+        let GoalAlert = UIAlertController(title: "목표 수정", message: nil, preferredStyle: .alert)
+        
+        GoalAlert.addTextField() { (tf) in
+            tf.placeholder = "이번달의 목표를 입력하세요."
+        }
+        
+        GoalAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        GoalAlert.addAction(UIAlertAction(title: "완료", style: .destructive) { _ in
+            let goal = GoalAlert.textFields?[0].text ?? ""
+            if self.uVM.goal == "" {
+                self.vm.createGoal(goal: goal) { success in
+                    let text = success ? "성공" : "실패"
+                    self.makeAlert(title: text, msg: "목표 수정에 \(text)하셨습니다.")
+                    self.uVM.goal = goal
+                }
+            }
+            else {
+                self.vm.changeGoal(goal: goal) { success in
+                    let text = success ? "성공" : "실패"
+                    self.makeAlert(title: text, msg: "목표 수정에 \(text)하셨습니다.")
+                    self.uVM.goal = goal
+                }}
+        })
+        self.present(GoalAlert, animated: true)
+    }
+    
     func chProfile() {
-        //화면 전환 구성하기
         self.performSegue(withIdentifier: "showChProfile", sender: self)
     }
     
@@ -42,17 +80,17 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         var okAction : UIAlertAction
         var cancel : UIAlertAction
         
-        okAction = UIAlertAction(title: "Yes", style: .destructive,handler:  { (action) in
+        okAction = UIAlertAction(title: "Yes", style: .destructive, handler:  { (action) in
             self.logout()
         })
         cancel = UIAlertAction(title: "No", style: .cancel, handler: nil)
-        alert.addAction(okAction)
         alert.addAction(cancel)
+        alert.addAction(okAction)
         present(alert, animated: false, completion: nil)
     }
     
     func logout() {
-        vm.logout()
+        uVM.deleteUserData()
         
         let storyboard = UIStoryboard(name: "Login", bundle: nil)
         let LoginNavContoller = storyboard.instantiateViewController(identifier: "LoginNavContoller")
@@ -61,7 +99,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return vm.sections.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -75,12 +113,19 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingCell", for: indexPath) as! SetTableViewCell
         
-        cell.title.text = vm.sections[indexPath.section]
-        cell.icon.image = UIImage(systemName: vm.changeImage[indexPath.section])
-        cell.nextIcon.image = UIImage(systemName: "chevron.right")
+        let cnt = indexPath.section
+        cell.update(t: vm.sections[cnt], img: vm.changeImage[cnt])
         cell.selectionStyle = .none
         
         return cell
     }
-
+    
+    func makeAlert(title: String, msg: String) -> Void {
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+        var okAction : UIAlertAction
+        okAction = UIAlertAction(title: "OK", style: .default, handler : nil)
+        alert.addAction(okAction)
+        present(alert, animated: false, completion: nil)
+    }
+    
 }
